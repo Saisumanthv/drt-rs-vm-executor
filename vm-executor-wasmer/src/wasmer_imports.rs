@@ -481,8 +481,8 @@ fn wasmer_import_managed_get_multi_dcdt_call_value(env: &VMHooksWrapper, multi_c
 }
 
 #[rustfmt::skip]
-fn wasmer_import_managed_get_back_transfers(env: &VMHooksWrapper, dcdt_transfers_value_handle: i32, moa_value_handle: i32) {
-    env.vm_hooks.managed_get_back_transfers(dcdt_transfers_value_handle, moa_value_handle)
+fn wasmer_import_managed_get_back_transfers(env: &VMHooksWrapper, dcdt_transfers_value_handle: i32, rewa_value_handle: i32) {
+    env.vm_hooks.managed_get_back_transfers(dcdt_transfers_value_handle, rewa_value_handle)
 }
 
 #[rustfmt::skip]

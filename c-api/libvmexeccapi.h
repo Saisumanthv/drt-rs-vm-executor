@@ -132,7 +132,7 @@ typedef struct {
   void (*managed_get_prev_block_random_seed_func_ptr)(void *context, int32_t result_handle);
   void (*managed_get_return_data_func_ptr)(void *context, int32_t result_id, int32_t result_handle);
   void (*managed_get_multi_dcdt_call_value_func_ptr)(void *context, int32_t multi_call_value_handle);
-  void (*managed_get_back_transfers_func_ptr)(void *context, int32_t dcdt_transfers_value_handle, int32_t moa_value_handle);
+  void (*managed_get_back_transfers_func_ptr)(void *context, int32_t dcdt_transfers_value_handle, int32_t rewa_value_handle);
   void (*managed_get_dcdt_balance_func_ptr)(void *context, int32_t address_handle, int32_t token_id_handle, int64_t nonce, int32_t value_handle);
   void (*managed_get_dcdt_token_data_func_ptr)(void *context, int32_t address_handle, int32_t token_id_handle, int64_t nonce, int32_t value_handle, int32_t properties_handle, int32_t hash_handle, int32_t name_handle, int32_t attributes_handle, int32_t creator_handle, int32_t royalties_handle, int32_t uris_handle);
   void (*managed_async_call_func_ptr)(void *context, int32_t dest_handle, int32_t value_handle, int32_t function_handle, int32_t arguments_handle);
